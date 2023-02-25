@@ -1,0 +1,113 @@
+/* body{
+    background-color: orange;
+}
+.Container2{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    
+}
+.Buttons{
+    justify-content: space-evenly;
+    text-align: center;
+    margin-left: 180px;
+    margin-top: 150px;
+    color: gray;
+    height: 25px;
+    width: 30px;
+}
+.timer-value{
+    margin-top: 5px;
+    margin-left: 10px;
+    color: black;
+} */
+/* .end{
+    margin-left: 250px;
+    margin-bottom: 0px;
+} */
+
+
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+body{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(154, 154, 6);
+}
+    
+.container{
+        width: 600px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+}
+    
+.btns{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+}
+    
+.btn{
+        width: 200px;
+        height: 50px;
+        border-radius: 30px;
+        border: none;
+        background: gray;
+        color: white;
+        font-size:24px;
+        transition: 0.25s;
+        cursor: pointer;
+}
+    
+.btn:hover{
+        transform: translateY(-5px);
+        box-shadow:  0 5px 5px gray;
+}
+.timer {
+        display: flex;
+        justify-content: space-around;
+}
+.timer h1{
+        font-size: 80px;
+        
+    
+}
+    
+.timer img{
+        width: 100px;
+        height: 100px;
+        transition: 1s;
+}
+    
+.timerStart{
+        animation-name: timer;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-fill-mode: none;
+        
+    }
+
+.timerStop {
+    transform: rotate(0);
+}
+
+@keyframes timer {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.picture{
+    margin-left: 260px;
+}
